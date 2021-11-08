@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		562705D127392ECC009A32CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D027392ECC009A32CE /* AppDelegate.swift */; };
-		562705D327392ECD009A32CE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562705D227392ECD009A32CE /* GameScene.sks */; };
 		562705D527392ECD009A32CE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562705D427392ECD009A32CE /* Actions.sks */; };
 		562705D727392ECD009A32CE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D627392ECD009A32CE /* GameScene.swift */; };
 		562705D927392ECD009A32CE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D827392ECD009A32CE /* GameViewController.swift */; };
@@ -16,6 +15,39 @@
 		562705DE27392ECE009A32CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562705DD27392ECE009A32CE /* Assets.xcassets */; };
 		562705E927392ECE009A32CE /* PoppingBalloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705E827392ECE009A32CE /* PoppingBalloonsTests.swift */; };
 		562705F427392ECE009A32CE /* PoppingBalloonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */; };
+		5627061127393CAB009A32CE /* blue balloon 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060627393CAB009A32CE /* blue balloon 11.png */; };
+		5627061227393CAB009A32CE /* blue balloon 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060627393CAB009A32CE /* blue balloon 11.png */; };
+		5627061327393CAB009A32CE /* blue balloon 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060627393CAB009A32CE /* blue balloon 11.png */; };
+		5627061427393CAB009A32CE /* blue balloon 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060727393CAB009A32CE /* blue balloon 10.png */; };
+		5627061527393CAB009A32CE /* blue balloon 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060727393CAB009A32CE /* blue balloon 10.png */; };
+		5627061627393CAB009A32CE /* blue balloon 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060727393CAB009A32CE /* blue balloon 10.png */; };
+		5627061727393CAB009A32CE /* blue balloon 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060827393CAB009A32CE /* blue balloon 1.png */; };
+		5627061827393CAB009A32CE /* blue balloon 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060827393CAB009A32CE /* blue balloon 1.png */; };
+		5627061927393CAB009A32CE /* blue balloon 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060827393CAB009A32CE /* blue balloon 1.png */; };
+		5627061A27393CAB009A32CE /* blue balloon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060927393CAB009A32CE /* blue balloon 2.png */; };
+		5627061B27393CAB009A32CE /* blue balloon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060927393CAB009A32CE /* blue balloon 2.png */; };
+		5627061C27393CAB009A32CE /* blue balloon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060927393CAB009A32CE /* blue balloon 2.png */; };
+		5627061D27393CAB009A32CE /* blue balloon 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060A27393CAB009A32CE /* blue balloon 3.png */; };
+		5627061E27393CAB009A32CE /* blue balloon 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060A27393CAB009A32CE /* blue balloon 3.png */; };
+		5627061F27393CAB009A32CE /* blue balloon 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060A27393CAB009A32CE /* blue balloon 3.png */; };
+		5627062027393CAB009A32CE /* blue balloon 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060B27393CAB009A32CE /* blue balloon 7.png */; };
+		5627062127393CAB009A32CE /* blue balloon 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060B27393CAB009A32CE /* blue balloon 7.png */; };
+		5627062227393CAB009A32CE /* blue balloon 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060B27393CAB009A32CE /* blue balloon 7.png */; };
+		5627062327393CAB009A32CE /* blue balloon 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060C27393CAB009A32CE /* blue balloon 6.png */; };
+		5627062427393CAB009A32CE /* blue balloon 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060C27393CAB009A32CE /* blue balloon 6.png */; };
+		5627062527393CAB009A32CE /* blue balloon 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060C27393CAB009A32CE /* blue balloon 6.png */; };
+		5627062627393CAB009A32CE /* blue balloon 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060D27393CAB009A32CE /* blue balloon 4.png */; };
+		5627062727393CAB009A32CE /* blue balloon 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060D27393CAB009A32CE /* blue balloon 4.png */; };
+		5627062827393CAB009A32CE /* blue balloon 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060D27393CAB009A32CE /* blue balloon 4.png */; };
+		5627062927393CAB009A32CE /* blue balloon 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060E27393CAB009A32CE /* blue balloon 5.png */; };
+		5627062A27393CAB009A32CE /* blue balloon 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060E27393CAB009A32CE /* blue balloon 5.png */; };
+		5627062B27393CAB009A32CE /* blue balloon 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060E27393CAB009A32CE /* blue balloon 5.png */; };
+		5627062C27393CAB009A32CE /* blue balloon 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060F27393CAB009A32CE /* blue balloon 8.png */; };
+		5627062D27393CAB009A32CE /* blue balloon 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060F27393CAB009A32CE /* blue balloon 8.png */; };
+		5627062E27393CAB009A32CE /* blue balloon 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627060F27393CAB009A32CE /* blue balloon 8.png */; };
+		5627062F27393CAB009A32CE /* blue balloon 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627061027393CAB009A32CE /* blue balloon 9.png */; };
+		5627063027393CAB009A32CE /* blue balloon 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627061027393CAB009A32CE /* blue balloon 9.png */; };
+		5627063127393CAB009A32CE /* blue balloon 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627061027393CAB009A32CE /* blue balloon 9.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +70,6 @@
 /* Begin PBXFileReference section */
 		562705CD27392ECC009A32CE /* PoppingBalloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoppingBalloons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562705D027392ECC009A32CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		562705D227392ECD009A32CE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		562705D427392ECD009A32CE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		562705D627392ECD009A32CE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		562705D827392ECD009A32CE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +82,17 @@
 		562705EF27392ECE009A32CE /* PoppingBalloonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoppingBalloonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingBalloonsUITests.swift; sourceTree = "<group>"; };
 		562705F527392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5627060627393CAB009A32CE /* blue balloon 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 11.png"; sourceTree = "<group>"; };
+		5627060727393CAB009A32CE /* blue balloon 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 10.png"; sourceTree = "<group>"; };
+		5627060827393CAB009A32CE /* blue balloon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 1.png"; sourceTree = "<group>"; };
+		5627060927393CAB009A32CE /* blue balloon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 2.png"; sourceTree = "<group>"; };
+		5627060A27393CAB009A32CE /* blue balloon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 3.png"; sourceTree = "<group>"; };
+		5627060B27393CAB009A32CE /* blue balloon 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 7.png"; sourceTree = "<group>"; };
+		5627060C27393CAB009A32CE /* blue balloon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 6.png"; sourceTree = "<group>"; };
+		5627060D27393CAB009A32CE /* blue balloon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 4.png"; sourceTree = "<group>"; };
+		5627060E27393CAB009A32CE /* blue balloon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 5.png"; sourceTree = "<group>"; };
+		5627060F27393CAB009A32CE /* blue balloon 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 8.png"; sourceTree = "<group>"; };
+		5627061027393CAB009A32CE /* blue balloon 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue balloon 9.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +143,8 @@
 		562705CF27392ECC009A32CE /* PoppingBalloons */ = {
 			isa = PBXGroup;
 			children = (
+				5627060527393CAB009A32CE /* blue balloons */,
 				562705D027392ECC009A32CE /* AppDelegate.swift */,
-				562705D227392ECD009A32CE /* GameScene.sks */,
 				562705D427392ECD009A32CE /* Actions.sks */,
 				562705D627392ECD009A32CE /* GameScene.swift */,
 				562705D827392ECD009A32CE /* GameViewController.swift */,
@@ -129,6 +171,24 @@
 				562705F527392ECE009A32CE /* Info.plist */,
 			);
 			path = PoppingBalloonsUITests;
+			sourceTree = "<group>";
+		};
+		5627060527393CAB009A32CE /* blue balloons */ = {
+			isa = PBXGroup;
+			children = (
+				5627060627393CAB009A32CE /* blue balloon 11.png */,
+				5627060727393CAB009A32CE /* blue balloon 10.png */,
+				5627060827393CAB009A32CE /* blue balloon 1.png */,
+				5627060927393CAB009A32CE /* blue balloon 2.png */,
+				5627060A27393CAB009A32CE /* blue balloon 3.png */,
+				5627060B27393CAB009A32CE /* blue balloon 7.png */,
+				5627060C27393CAB009A32CE /* blue balloon 6.png */,
+				5627060D27393CAB009A32CE /* blue balloon 4.png */,
+				5627060E27393CAB009A32CE /* blue balloon 5.png */,
+				5627060F27393CAB009A32CE /* blue balloon 8.png */,
+				5627061027393CAB009A32CE /* blue balloon 9.png */,
+			);
+			path = "blue balloons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +294,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5627062327393CAB009A32CE /* blue balloon 6.png in Resources */,
 				562705DC27392ECD009A32CE /* Main.storyboard in Resources */,
-				562705D327392ECD009A32CE /* GameScene.sks in Resources */,
+				5627061427393CAB009A32CE /* blue balloon 10.png in Resources */,
 				562705DE27392ECE009A32CE /* Assets.xcassets in Resources */,
+				5627062C27393CAB009A32CE /* blue balloon 8.png in Resources */,
+				5627062F27393CAB009A32CE /* blue balloon 9.png in Resources */,
+				5627061727393CAB009A32CE /* blue balloon 1.png in Resources */,
+				5627062927393CAB009A32CE /* blue balloon 5.png in Resources */,
 				562705D527392ECD009A32CE /* Actions.sks in Resources */,
+				5627062627393CAB009A32CE /* blue balloon 4.png in Resources */,
+				5627061A27393CAB009A32CE /* blue balloon 2.png in Resources */,
+				5627062027393CAB009A32CE /* blue balloon 7.png in Resources */,
+				5627061127393CAB009A32CE /* blue balloon 11.png in Resources */,
+				5627061D27393CAB009A32CE /* blue balloon 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +315,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5627063027393CAB009A32CE /* blue balloon 9.png in Resources */,
+				5627062D27393CAB009A32CE /* blue balloon 8.png in Resources */,
+				5627062727393CAB009A32CE /* blue balloon 4.png in Resources */,
+				5627062427393CAB009A32CE /* blue balloon 6.png in Resources */,
+				5627061E27393CAB009A32CE /* blue balloon 3.png in Resources */,
+				5627061827393CAB009A32CE /* blue balloon 1.png in Resources */,
+				5627061527393CAB009A32CE /* blue balloon 10.png in Resources */,
+				5627062127393CAB009A32CE /* blue balloon 7.png in Resources */,
+				5627061B27393CAB009A32CE /* blue balloon 2.png in Resources */,
+				5627061227393CAB009A32CE /* blue balloon 11.png in Resources */,
+				5627062A27393CAB009A32CE /* blue balloon 5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +333,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5627063127393CAB009A32CE /* blue balloon 9.png in Resources */,
+				5627062E27393CAB009A32CE /* blue balloon 8.png in Resources */,
+				5627062827393CAB009A32CE /* blue balloon 4.png in Resources */,
+				5627062527393CAB009A32CE /* blue balloon 6.png in Resources */,
+				5627061F27393CAB009A32CE /* blue balloon 3.png in Resources */,
+				5627061927393CAB009A32CE /* blue balloon 1.png in Resources */,
+				5627061627393CAB009A32CE /* blue balloon 10.png in Resources */,
+				5627062227393CAB009A32CE /* blue balloon 7.png in Resources */,
+				5627061C27393CAB009A32CE /* blue balloon 2.png in Resources */,
+				5627061327393CAB009A32CE /* blue balloon 11.png in Resources */,
+				5627062B27393CAB009A32CE /* blue balloon 5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
