@@ -16,6 +16,7 @@
 		562705E927392ECE009A32CE /* PoppingBalloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705E827392ECE009A32CE /* PoppingBalloonsTests.swift */; };
 		562705F427392ECE009A32CE /* PoppingBalloonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */; };
 		56270637273944F1009A32CE /* balloons.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 56270636273944F1009A32CE /* balloons.atlas */; };
+		566EC88B273C04C8005F66D5 /* balloon_pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingBalloonsUITests.swift; sourceTree = "<group>"; };
 		562705F527392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56270636273944F1009A32CE /* balloons.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = balloons.atlas; sourceTree = "<group>"; };
+		566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = balloon_pop.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +103,12 @@
 		562705CF27392ECC009A32CE /* PoppingBalloons */ = {
 			isa = PBXGroup;
 			children = (
-				56270636273944F1009A32CE /* balloons.atlas */,
+				566EC88C273C04DC005F66D5 /* Resources */,
 				562705D027392ECC009A32CE /* AppDelegate.swift */,
 				562705D427392ECD009A32CE /* Actions.sks */,
 				562705D627392ECD009A32CE /* GameScene.swift */,
 				562705D827392ECD009A32CE /* GameViewController.swift */,
 				562705DA27392ECD009A32CE /* Main.storyboard */,
-				562705DD27392ECE009A32CE /* Assets.xcassets */,
 				562705DF27392ECE009A32CE /* Info.plist */,
 			);
 			path = PoppingBalloons;
@@ -129,6 +130,16 @@
 				562705F527392ECE009A32CE /* Info.plist */,
 			);
 			path = PoppingBalloonsUITests;
+			sourceTree = "<group>";
+		};
+		566EC88C273C04DC005F66D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */,
+				56270636273944F1009A32CE /* balloons.atlas */,
+				562705DD27392ECE009A32CE /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				562705DC27392ECD009A32CE /* Main.storyboard in Resources */,
 				562705DE27392ECE009A32CE /* Assets.xcassets in Resources */,
 				562705D527392ECD009A32CE /* Actions.sks in Resources */,
+				566EC88B273C04C8005F66D5 /* balloon_pop.mp3 in Resources */,
 				56270637273944F1009A32CE /* balloons.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
