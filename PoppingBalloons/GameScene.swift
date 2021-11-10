@@ -43,6 +43,22 @@ class GameScene: SKScene {
     balloon.run(SKAction.sequence([actualMove, actionMoveDone]))
   }
   
+  func burstBalloon(balloon: SKNode) {
+    run(SKAction.playSoundFileNamed("balloon_pop", waitForCompletion: false))
+    balloon.removeFromParent()
+    
+    var textures: [SKTexture] = []
+    
+    for i in 1...SKTextureAtlas(named: "balloons").textureNames.count {
+      textures.append(SKTexture(imageNamed: "balloon\(i)"))
+    }
+    let burst = SKSpriteNode(texture: textures.first!)
+    burst.position = balloon.position
+    addChild(burst)
+    
+    burst.run(SKAction.sequence([SKAction.animate(with: textures, timePerFrame: 0.1, resize: false, restore: false), SKAction.removeFromParent()]))
+  }
+  
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let touch = touches.first {
       
@@ -50,7 +66,7 @@ class GameScene: SKScene {
       let balloonNode = physicsWorld.body(at: touchLocation)?.node
       
       if balloonNode?.contains(touchLocation) != nil {
-        balloonNode?.removeFromParent()
+        burstBalloon(balloon: balloonNode!)
       }
     }
   }
