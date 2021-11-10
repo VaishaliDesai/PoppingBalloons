@@ -2,6 +2,13 @@ import SpriteKit
 
 class GameScene: SKScene {
   var balloon: SKSpriteNode!
+  var scoreLabel: SKLabelNode!
+  
+  var score = 0 {
+    didSet {
+      scoreLabel.text = "Score: \(score)"
+    }
+  }
   
   override func didMove(to view: SKView) {
     backgroundColor = .white
@@ -12,6 +19,11 @@ class GameScene: SKScene {
       ])
     ))
     
+    addBackgroundWithMusic()
+    addScoreLabel()
+  }
+  
+  func addBackgroundWithMusic() {
     let background = SKSpriteNode(imageNamed: "background")
     background.position = CGPoint(x: size.width / 2, y: size.height / 2)
     background.scale(to: size)
@@ -24,10 +36,22 @@ class GameScene: SKScene {
     physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
   }
   
+  func addScoreLabel() {
+    scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
+    scoreLabel.fontColor = .red
+    scoreLabel.fontSize = 20
+    scoreLabel.text = "Score: 0"
+    scoreLabel.horizontalAlignmentMode = .right
+    scoreLabel.position = CGPoint(x: self.size.width - 20, y: self.size.height - 20)
+    addChild(scoreLabel)
+  }
+  
   func flyBalloon() {
     balloon = SKSpriteNode(imageNamed: Color.allCases.randomElement()?.rawValue ?? Color.red.rawValue)
     
     balloon.position = CGPoint(x: CGFloat.random(in: 0...size.width), y: 0) //random
+    balloon.xScale = 2
+    balloon.yScale = 2
     balloon.physicsBody = SKPhysicsBody(circleOfRadius: balloon.size.width)
     balloon.physicsBody?.isDynamic = false
     addChild(balloon)
@@ -53,6 +77,7 @@ class GameScene: SKScene {
   func burstBalloon(balloon: SKNode) {
     run(SKAction.playSoundFileNamed("balloon_pop", waitForCompletion: false))
     balloon.removeFromParent()
+    score += 1
     
     addCelebration(ballon: balloon)
   }
