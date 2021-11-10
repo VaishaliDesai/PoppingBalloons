@@ -1,10 +1,10 @@
 import SpriteKit
 
 class GameScene: SKScene {
+  var balloon: SKSpriteNode!
   
   override func didMove(to view: SKView) {
     backgroundColor = .white
-    
     run(SKAction.repeatForever(
       SKAction.sequence([
         SKAction.run(flyBalloon),
@@ -18,9 +18,11 @@ class GameScene: SKScene {
   }
   
   func flyBalloon() {
-    let balloon = SKSpriteNode(imageNamed: Color.allCases.randomElement()?.rawValue ?? Color.red.rawValue)
+    balloon = SKSpriteNode(imageNamed: Color.allCases.randomElement()?.rawValue ?? Color.red.rawValue)
     
     balloon.position = CGPoint(x: CGFloat.random(in: 0...size.width), y: 0) //random
+    balloon.physicsBody = SKPhysicsBody(circleOfRadius: balloon.size.width)
+    balloon.physicsBody?.isDynamic = false
     addChild(balloon)
     
     let actualDuration = CGFloat.random(in: 4.0...6.0)
@@ -40,12 +42,17 @@ class GameScene: SKScene {
     let actionMoveDone = SKAction.removeFromParent()
     balloon.run(SKAction.sequence([actualMove, actionMoveDone]))
   }
-    
-  func balloonBursts(balloon: SKNode) {
-    let balloonSpriteNode = SKSpriteNode(imageNamed: Color.allCases.randomElement()?.rawValue ?? Color.red.rawValue)
-    balloonSpriteNode.position = balloon.position
-    addChild(balloonSpriteNode)
-    balloon.removeFromParent()
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    if let touch = touches.first {
+      
+      let touchLocation = touch.location(in: self)
+      let balloonNode = physicsWorld.body(at: touchLocation)?.node
+      
+      if balloonNode?.contains(touchLocation) != nil {
+        balloonNode?.removeFromParent()
+      }
+    }
   }
 }
 
