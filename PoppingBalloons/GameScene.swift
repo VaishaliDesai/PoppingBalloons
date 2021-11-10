@@ -12,9 +12,16 @@ class GameScene: SKScene {
       ])
     ))
     
-    let backgroundMusic = SKAudioNode(fileNamed: "background-music-aac.caf")
+    let background = SKSpriteNode(imageNamed: "background")
+    background.position = CGPoint(x: size.width / 2, y: size.height / 2)
+    background.scale(to: size)
+    addChild(background)
+    
+    let backgroundMusic = SKAudioNode(fileNamed: "background.mp3")
     backgroundMusic.autoplayLooped = true
     addChild(backgroundMusic)
+    
+    physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
   }
   
   func flyBalloon() {
@@ -47,16 +54,26 @@ class GameScene: SKScene {
     run(SKAction.playSoundFileNamed("balloon_pop", waitForCompletion: false))
     balloon.removeFromParent()
     
-    var textures: [SKTexture] = []
-    
-    for i in 1...SKTextureAtlas(named: "balloons").textureNames.count {
-      textures.append(SKTexture(imageNamed: "balloon\(i)"))
-    }
-    let burst = SKSpriteNode(texture: textures.first!)
-    burst.position = balloon.position
-    addChild(burst)
-    
-    burst.run(SKAction.sequence([SKAction.animate(with: textures, timePerFrame: 0.1, resize: false, restore: false), SKAction.removeFromParent()]))
+    addCelebration(ballon: balloon)
+  }
+  
+  func addCelebration(ballon: SKNode) {
+    let size = size.width * 0.01
+    let emitter = SKEmitterNode()
+    emitter.particleSize = CGSize(width: size, height: size)
+    emitter.particleZPosition = 2
+    emitter.numParticlesToEmit = 100
+    emitter.particleBirthRate = 300
+    emitter.particleLifetimeRange = 5
+    emitter.emissionAngleRange = 360 * .pi / 180
+    emitter.particleSpeed = 700
+    emitter.particleColor = .red
+    emitter.position = ballon.position
+    emitter.particleColorSequence = SKKeyframeSequence(
+      keyframeValues: [SKColor.yellow, SKColor.red, SKColor.lightGray,SKColor.gray],
+      times: [0, 0.25, 0.5, 1]
+    )
+    addChild(emitter)
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,17 +90,17 @@ class GameScene: SKScene {
 }
 
 public enum Color: String, CaseIterable {
-  case blue = "balloon_blue"
-  case brown = "balloon_brown"
-  case cyan = "balloon_cyan"
-  case green = "balloon_green"
-  case lime = "balloon_lime"
-  case olive = "balloon_olive"
-  case orange = "balloon_orange"
-  case pink = "balloon_pink"
-  case purple = "balloon_purple"
-  case red = "balloon_red"
-  case yellow = "balloon_yellow"
+  case blue = "blue"
+  case brown = "brown"
+  case cyan = "cyan"
+  case green = "green"
+  case lime = "lime"
+  case olive = "olive"
+  case orange = "orange"
+  case pink = "pink"
+  case purple = "purple"
+  case red = "red"
+  case yellow = "yellow"
 }
 
 
