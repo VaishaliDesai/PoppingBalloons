@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5621AFF2273D40D100F87F0B /* GameSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621AFF1273D40D100F87F0B /* GameSceneTests.swift */; };
 		562705D127392ECC009A32CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D027392ECC009A32CE /* AppDelegate.swift */; };
 		562705D527392ECD009A32CE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562705D427392ECD009A32CE /* Actions.sks */; };
 		562705D727392ECD009A32CE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D627392ECD009A32CE /* GameScene.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5621AFF1273D40D100F87F0B /* GameSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneTests.swift; sourceTree = "<group>"; };
 		562705CD27392ECC009A32CE /* PoppingBalloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoppingBalloons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562705D027392ECC009A32CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		562705D427392ECD009A32CE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				562705E827392ECE009A32CE /* PoppingBalloonsTests.swift */,
 				562705EA27392ECE009A32CE /* Info.plist */,
+				5621AFF1273D40D100F87F0B /* GameSceneTests.swift */,
 			);
 			path = PoppingBalloonsTests;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5621AFF2273D40D100F87F0B /* GameSceneTests.swift in Sources */,
 				562705E927392ECE009A32CE /* PoppingBalloonsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
