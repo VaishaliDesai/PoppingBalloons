@@ -90,12 +90,4 @@ class GameSceneTests: XCTestCase {
     XCTAssertEqual(emitter.particleColorSequence?.getKeyframeValue(for: 3) as? SKColor, .gray)
     XCTAssertEqual(emitter.particleColorSequence?.getKeyframeTime(for: 3), 1)
   }
-
-//    func testPerformanceExample() {
-//        // This is an example of a performance test case.
-//        self.measure {
-//            // Put the code you want to measure the time of here.
-//        }
-//    }
-
 }
