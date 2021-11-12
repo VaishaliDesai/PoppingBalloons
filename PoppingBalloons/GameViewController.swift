@@ -6,14 +6,16 @@ class GameViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let scene = GameScene(size: view.bounds.size)
-    scene.name = "gameScene"
-    let skView = view as! SKView
-    skView.showsFPS = true
-    skView.showsNodeCount = true
-    skView.ignoresSiblingOrder = true
-    scene.scaleMode = .resizeFill
-    skView.presentScene(scene)
+    DispatchQueue.main.async { [weak self] in
+      let scene = GameScene(size: self?.view.bounds.size ?? .zero)
+      scene.name = "gameScene"
+      scene.scaleMode = .aspectFill
+      let skView = self?.view as! SKView
+      skView.showsFPS = true
+      skView.showsNodeCount = true
+      skView.ignoresSiblingOrder = true
+      skView.presentScene(scene)
+    }
   }
   
   override var prefersStatusBarHidden: Bool {
