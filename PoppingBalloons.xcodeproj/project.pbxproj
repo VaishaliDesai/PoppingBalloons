@@ -45,8 +45,6 @@
 		562705DF27392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562705E427392ECE009A32CE /* PoppingBalloonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoppingBalloonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		562705EA27392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingBalloonsUITests.swift; sourceTree = "<group>"; };
-		562705F527392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56471CD2273EB03500E4C755 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		56471CD4273EB61300E4C755 /* GameOverSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverSceneTests.swift; sourceTree = "<group>"; };
 		566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = balloon_pop.mp3; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			children = (
 				562705CF27392ECC009A32CE /* PoppingBalloons */,
 				562705E727392ECE009A32CE /* PoppingBalloonsTests */,
-				562705F227392ECE009A32CE /* PoppingBalloonsUITests */,
 				562705CE27392ECC009A32CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,15 +111,6 @@
 				56471CD4273EB61300E4C755 /* GameOverSceneTests.swift */,
 			);
 			path = PoppingBalloonsTests;
-			sourceTree = "<group>";
-		};
-		562705F227392ECE009A32CE /* PoppingBalloonsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */,
-				562705F527392ECE009A32CE /* Info.plist */,
-			);
-			path = PoppingBalloonsUITests;
 			sourceTree = "<group>";
 		};
 		566EC88C273C04DC005F66D5 /* Resources */ = {
