@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5621AFF2273D40D100F87F0B /* GameSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621AFF1273D40D100F87F0B /* GameSceneTests.swift */; };
+		5621AFF6273D887800F87F0B /* surprises.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5621AFF5273D7AEA00F87F0B /* surprises.atlas */; };
 		562705D127392ECC009A32CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D027392ECC009A32CE /* AppDelegate.swift */; };
 		562705D527392ECD009A32CE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562705D427392ECD009A32CE /* Actions.sks */; };
 		562705D727392ECD009A32CE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D627392ECD009A32CE /* GameScene.swift */; };
@@ -16,7 +17,6 @@
 		562705DE27392ECE009A32CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562705DD27392ECE009A32CE /* Assets.xcassets */; };
 		562705E927392ECE009A32CE /* PoppingBalloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705E827392ECE009A32CE /* PoppingBalloonsTests.swift */; };
 		562705F427392ECE009A32CE /* PoppingBalloonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */; };
-		56270637273944F1009A32CE /* balloons.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 56270636273944F1009A32CE /* balloons.atlas */; };
 		566EC88B273C04C8005F66D5 /* balloon_pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */; };
 		566EC88E273C0EAE005F66D5 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 566EC88D273C0EAE005F66D5 /* background.mp3 */; };
 		566EC892273C203E005F66D5 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 566EC891273C203E005F66D5 /* MyParticle.sks */; };
@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		5621AFF1273D40D100F87F0B /* GameSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneTests.swift; sourceTree = "<group>"; };
+		5621AFF5273D7AEA00F87F0B /* surprises.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = surprises.atlas; sourceTree = "<group>"; };
 		562705CD27392ECC009A32CE /* PoppingBalloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoppingBalloons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562705D027392ECC009A32CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		562705D427392ECD009A32CE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		562705EF27392ECE009A32CE /* PoppingBalloonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoppingBalloonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingBalloonsUITests.swift; sourceTree = "<group>"; };
 		562705F527392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56270636273944F1009A32CE /* balloons.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = balloons.atlas; sourceTree = "<group>"; };
 		566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = balloon_pop.mp3; sourceTree = "<group>"; };
 		566EC88D273C0EAE005F66D5 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 		566EC891273C203E005F66D5 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
@@ -142,9 +142,9 @@
 		566EC88C273C04DC005F66D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5621AFF5273D7AEA00F87F0B /* surprises.atlas */,
 				566EC88D273C0EAE005F66D5 /* background.mp3 */,
 				566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */,
-				56270636273944F1009A32CE /* balloons.atlas */,
 				562705DD27392ECE009A32CE /* Assets.xcassets */,
 				566EC891273C203E005F66D5 /* MyParticle.sks */,
 			);
@@ -255,12 +255,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				562705DC27392ECD009A32CE /* Main.storyboard in Resources */,
+				5621AFF6273D887800F87F0B /* surprises.atlas in Resources */,
 				566EC88E273C0EAE005F66D5 /* background.mp3 in Resources */,
 				562705DE27392ECE009A32CE /* Assets.xcassets in Resources */,
 				562705D527392ECD009A32CE /* Actions.sks in Resources */,
 				566EC892273C203E005F66D5 /* MyParticle.sks in Resources */,
 				566EC88B273C04C8005F66D5 /* balloon_pop.mp3 in Resources */,
-				56270637273944F1009A32CE /* balloons.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
