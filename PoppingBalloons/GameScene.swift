@@ -7,6 +7,9 @@ class GameScene: SKScene {
   var score = 0 {
     didSet {
       scoreLabel.text = "Balloons: \(score)"
+      if score > 30 {
+        endGame()
+      }
     }
   }
   
@@ -21,6 +24,11 @@ class GameScene: SKScene {
     
     addBackgroundWithMusic()
     addScoreLabel()
+  }
+  
+  func endGame() {
+    let gameOverScene = GameOverScene(size: size)
+    view?.presentScene(gameOverScene, transition: .flipHorizontal(withDuration: 0.5))
   }
   
   func addBackgroundWithMusic() {
@@ -106,6 +114,7 @@ class GameScene: SKScene {
   func dropSurprise(balloon: SKNode) {
     let surprise = SKSpriteNode(imageNamed: String(describing: Surprise.allCases.randomElement() ?? Surprise.croissant))
     
+    surprise.name = "surprise"
     surprise.position = balloon.position
     surprise.physicsBody = SKPhysicsBody(circleOfRadius: surprise.size.width)
     surprise.physicsBody?.isDynamic = false

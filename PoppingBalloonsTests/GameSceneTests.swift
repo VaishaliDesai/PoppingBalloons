@@ -35,7 +35,7 @@ class GameSceneTests: XCTestCase {
     
     XCTAssertEqual(scoreLabel.fontColor, .red)
     XCTAssertEqual(scoreLabel.fontSize, 20)
-    XCTAssertEqual(scoreLabel.text, "Score: 0")
+    XCTAssertEqual(scoreLabel.text, "Balloons: 0")
     XCTAssertEqual(scoreLabel.horizontalAlignmentMode, .right)
     XCTAssertEqual(scoreLabel.position, CGPoint(x: gameScene.size.width - 20, y: gameScene.size.height - 20))
   }
@@ -89,5 +89,22 @@ class GameSceneTests: XCTestCase {
     XCTAssertEqual(emitter.particleColorSequence?.getKeyframeTime(for: 2), 0.5)
     XCTAssertEqual(emitter.particleColorSequence?.getKeyframeValue(for: 3) as? SKColor, .gray)
     XCTAssertEqual(emitter.particleColorSequence?.getKeyframeTime(for: 3), 1)
+  }
+  
+  func test_dropSurprises() throws {
+    let balloon = SKNode()
+    gameScene.dropSurprise(balloon: balloon)
+    
+    let surprise = try XCTUnwrap(gameScene.childNode(withName: "surprise") as? SKSpriteNode)
+    
+    XCTAssertEqual(surprise.position, balloon.position)
+    XCTAssertFalse(try XCTUnwrap(surprise.physicsBody?.isDynamic))
+  }
+  
+  func test_score() {
+    gameScene.addScoreLabel()
+    
+    gameScene.score = 1
+    XCTAssertEqual(gameScene.scoreLabel.text, "Balloons: 1")
   }
 }
