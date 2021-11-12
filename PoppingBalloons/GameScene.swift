@@ -6,7 +6,7 @@ class GameScene: SKScene {
   
   var score = 0 {
     didSet {
-      scoreLabel.text = "Score: \(score)"
+      scoreLabel.text = "Balloons: \(score)"
     }
   }
   
@@ -43,7 +43,7 @@ class GameScene: SKScene {
     scoreLabel.name = "scoreLabel"
     scoreLabel.fontColor = .red
     scoreLabel.fontSize = 20
-    scoreLabel.text = "Score: 0"
+    scoreLabel.text = "Balloons: 0"
     scoreLabel.horizontalAlignmentMode = .right
     scoreLabel.position = CGPoint(x: self.size.width - 20, y: self.size.height - 20)
     addChild(scoreLabel)
@@ -71,8 +71,7 @@ class GameScene: SKScene {
     let speed = TimeInterval(CGFloat.random(in: 4.0...6.0))
     let actualMove = SKAction.move(to: CGPoint(x: xRange, y: size.height), duration: speed)
     
-    let actionMoveDone = SKAction.removeFromParent()
-    balloon.run(SKAction.sequence([actualMove, actionMoveDone]))
+    balloon.run(SKAction.sequence([actualMove, .removeFromParent()]))
   }
   
   func burstBalloon(balloon: SKNode) {
@@ -81,6 +80,7 @@ class GameScene: SKScene {
     score += 1
     
     addCelebration(balloon: balloon)
+    addSurpriseAnimation(balloon: balloon)
   }
   
   func addCelebration(balloon: SKNode) {
@@ -101,6 +101,46 @@ class GameScene: SKScene {
       times: [0, 0.25, 0.5, 1]
     )
     addChild(emitter)
+  }
+  
+  func dropSurprise(balloon: SKNode) {
+    let surprise = SKSpriteNode(imageNamed: String(describing: Surprise.allCases.randomElement() ?? Surprise.croissant))
+    
+    surprise.position = balloon.position
+    surprise.physicsBody = SKPhysicsBody(circleOfRadius: surprise.size.width)
+    surprise.physicsBody?.isDynamic = false
+    addChild(surprise)
+    
+    let speed = TimeInterval(CGFloat.random(in: 2.0...4.0))
+    let actualMove = SKAction.move(to: CGPoint(x: CGFloat.random(in: 0...size.width), y: 0), duration: speed)
+    
+    surprise.run(SKAction.sequence([actualMove, .removeFromParent()]))
+  }
+  
+  
+  func addSurpriseAnimation(balloon: SKNode) {
+    let atlas = SKTextureAtlas(named: "surprises")
+    var surprises = [SKTexture]()
+    
+    for i in 0...atlas.textureNames.count - 1 {
+      surprises.append(SKTexture(imageNamed: atlas.textureNames[i].description))
+    }
+    
+    let node = SKSpriteNode(texture: surprises.first)
+    node.position = balloon.position
+    addChild(node)
+    
+    let surprise = surprises.randomElement() ?? surprises.first!
+    
+    node.run(
+      .sequence([
+        .repeat(.animate(with: surprises, timePerFrame: 0.1), count: 3),
+        .setTexture(surprise),
+        .move(to: CGPoint(x: CGFloat.random(in: 0...size.width), y: 0), duration: TimeInterval(CGFloat.random(in: 2.0...4.0))),
+        .removeFromParent()
+      ]),
+      withKey: "animatingSurprises"
+    )
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -130,4 +170,13 @@ public enum Color: CaseIterable {
   case yellow
 }
 
+
+public enum Surprise: CaseIterable {
+  case croissant
+  case cupcake
+  case danish
+  case donut
+  case macaroon
+  case sugarCookie
+}
 
