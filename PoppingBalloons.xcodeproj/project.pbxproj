@@ -15,8 +15,6 @@
 		562705D927392ECD009A32CE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705D827392ECD009A32CE /* GameViewController.swift */; };
 		562705DC27392ECD009A32CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562705DA27392ECD009A32CE /* Main.storyboard */; };
 		562705DE27392ECE009A32CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562705DD27392ECE009A32CE /* Assets.xcassets */; };
-		562705E927392ECE009A32CE /* PoppingBalloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705E827392ECE009A32CE /* PoppingBalloonsTests.swift */; };
-		562705F427392ECE009A32CE /* PoppingBalloonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */; };
 		56471CD3273EB03500E4C755 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56471CD2273EB03500E4C755 /* GameOverScene.swift */; };
 		56471CD5273EB61300E4C755 /* GameOverSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56471CD4273EB61300E4C755 /* GameOverSceneTests.swift */; };
 		566EC88B273C04C8005F66D5 /* balloon_pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 566EC88A273C04C8005F66D5 /* balloon_pop.mp3 */; };
@@ -26,13 +24,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		562705E527392ECE009A32CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 562705C527392ECC009A32CE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 562705CC27392ECC009A32CE;
-			remoteInfo = PoppingBalloons;
-		};
-		562705F027392ECE009A32CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 562705C527392ECC009A32CE /* Project object */;
 			proxyType = 1;
@@ -53,9 +44,7 @@
 		562705DD27392ECE009A32CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		562705DF27392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562705E427392ECE009A32CE /* PoppingBalloonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoppingBalloonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		562705E827392ECE009A32CE /* PoppingBalloonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingBalloonsTests.swift; sourceTree = "<group>"; };
 		562705EA27392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		562705EF27392ECE009A32CE /* PoppingBalloonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoppingBalloonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		562705F327392ECE009A32CE /* PoppingBalloonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingBalloonsUITests.swift; sourceTree = "<group>"; };
 		562705F527392ECE009A32CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56471CD2273EB03500E4C755 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
@@ -80,13 +69,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		562705EC27392ECE009A32CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -105,7 +87,6 @@
 			children = (
 				562705CD27392ECC009A32CE /* PoppingBalloons.app */,
 				562705E427392ECE009A32CE /* PoppingBalloonsTests.xctest */,
-				562705EF27392ECE009A32CE /* PoppingBalloonsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +109,6 @@
 		562705E727392ECE009A32CE /* PoppingBalloonsTests */ = {
 			isa = PBXGroup;
 			children = (
-				562705E827392ECE009A32CE /* PoppingBalloonsTests.swift */,
 				562705EA27392ECE009A32CE /* Info.plist */,
 				5621AFF1273D40D100F87F0B /* GameSceneTests.swift */,
 				56471CD4273EB61300E4C755 /* GameOverSceneTests.swift */,
@@ -195,24 +175,6 @@
 			productReference = 562705E427392ECE009A32CE /* PoppingBalloonsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		562705EE27392ECE009A32CE /* PoppingBalloonsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 562705FE27392ECE009A32CE /* Build configuration list for PBXNativeTarget "PoppingBalloonsUITests" */;
-			buildPhases = (
-				562705EB27392ECE009A32CE /* Sources */,
-				562705EC27392ECE009A32CE /* Frameworks */,
-				562705ED27392ECE009A32CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				562705F127392ECE009A32CE /* PBXTargetDependency */,
-			);
-			name = PoppingBalloonsUITests;
-			productName = PoppingBalloonsUITests;
-			productReference = 562705EF27392ECE009A32CE /* PoppingBalloonsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,10 +188,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					562705E327392ECE009A32CE = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 562705CC27392ECC009A32CE;
-					};
-					562705EE27392ECE009A32CE = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 562705CC27392ECC009A32CE;
 					};
@@ -250,7 +208,6 @@
 			targets = (
 				562705CC27392ECC009A32CE /* PoppingBalloons */,
 				562705E327392ECE009A32CE /* PoppingBalloonsTests */,
-				562705EE27392ECE009A32CE /* PoppingBalloonsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,13 +234,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		562705ED27392ECE009A32CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -303,16 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5621AFF2273D40D100F87F0B /* GameSceneTests.swift in Sources */,
-				562705E927392ECE009A32CE /* PoppingBalloonsTests.swift in Sources */,
 				56471CD5273EB61300E4C755 /* GameOverSceneTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		562705EB27392ECE009A32CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				562705F427392ECE009A32CE /* PoppingBalloonsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,11 +264,6 @@
 			isa = PBXTargetDependency;
 			target = 562705CC27392ECC009A32CE /* PoppingBalloons */;
 			targetProxy = 562705E527392ECE009A32CE /* PBXContainerItemProxy */;
-		};
-		562705F127392ECE009A32CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 562705CC27392ECC009A32CE /* PoppingBalloons */;
-			targetProxy = 562705F027392ECE009A32CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,46 +477,6 @@
 			};
 			name = Release;
 		};
-		562705FF27392ECE009A32CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DAJHCV9YA3;
-				INFOPLIST_FILE = PoppingBalloonsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vaishalidesai.PoppingBalloonsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PoppingBalloons;
-			};
-			name = Debug;
-		};
-		5627060027392ECE009A32CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DAJHCV9YA3;
-				INFOPLIST_FILE = PoppingBalloonsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vaishalidesai.PoppingBalloonsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PoppingBalloons;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,15 +503,6 @@
 			buildConfigurations = (
 				562705FC27392ECE009A32CE /* Debug */,
 				562705FD27392ECE009A32CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		562705FE27392ECE009A32CE /* Build configuration list for PBXNativeTarget "PoppingBalloonsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				562705FF27392ECE009A32CE /* Debug */,
-				5627060027392ECE009A32CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
